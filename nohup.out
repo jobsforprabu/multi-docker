@@ -1,0 +1,422 @@
+Starting complex_nginx_1 ... 
+Starting complex_redis_1 ... 
+Starting complex_postgres_1 ... 
+Starting complex_worker_1   ... 
+Starting complex_api_1      ... 
+Starting complex_client_1   ... 
+[6A[2KStarting complex_nginx_1    ... [32mdone[0m[6B[2A[2KStarting complex_api_1      ... [32mdone[0m[2B[3A[2KStarting complex_worker_1   ... [32mdone[0m[3B[5A[2KStarting complex_redis_1    ... [32mdone[0m[5B[4A[2KStarting complex_postgres_1 ... [32mdone[0m[4B[1A[2KStarting complex_client_1   ... [32mdone[0m[1BAttaching to complex_nginx_1, complex_api_1, complex_worker_1, complex_redis_1, complex_postgres_1, complex_client_1
+[35mredis_1     |[0m 1:C 28 Nov 2019 04:51:27.390 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[35mredis_1     |[0m 1:C 28 Nov 2019 04:51:27.390 # Redis version=5.0.6, bits=64, commit=00000000, modified=0, pid=1, just started
+[35mredis_1     |[0m 1:C 28 Nov 2019 04:51:27.390 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[35mredis_1     |[0m 1:M 28 Nov 2019 04:51:27.391 * Running mode=standalone, port=6379.
+[35mredis_1     |[0m 1:M 28 Nov 2019 04:51:27.391 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[35mredis_1     |[0m 1:M 28 Nov 2019 04:51:27.391 # Server initialized
+[35mredis_1     |[0m 1:M 28 Nov 2019 04:51:27.391 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[35mredis_1     |[0m 1:M 28 Nov 2019 04:51:27.391 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[35mredis_1     |[0m 1:M 28 Nov 2019 04:51:27.422 * DB loaded from disk: 0.030 seconds
+[35mredis_1     |[0m 1:M 28 Nov 2019 04:51:27.422 * Ready to accept connections
+[31mpostgres_1  |[0m 
+[31mpostgres_1  |[0m PostgreSQL Database directory appears to contain a database; Skipping initialization
+[31mpostgres_1  |[0m 
+[31mpostgres_1  |[0m 2019-11-28 04:51:28.021 UTC [1] LOG:  starting PostgreSQL 12.1 (Debian 12.1-1.pgdg100+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 8.3.0-6) 8.3.0, 64-bit
+[31mpostgres_1  |[0m 2019-11-28 04:51:28.022 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[31mpostgres_1  |[0m 2019-11-28 04:51:28.022 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[31mpostgres_1  |[0m 2019-11-28 04:51:28.049 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[31mpostgres_1  |[0m 2019-11-28 04:51:28.118 UTC [23] LOG:  database system was shut down at 2019-11-28 04:50:57 UTC
+[31mpostgres_1  |[0m 2019-11-28 04:51:28.138 UTC [1] LOG:  database system is ready to accept connections
+[34mclient_1    |[0m 
+[34mclient_1    |[0m > client@0.1.0 start /app
+[34mclient_1    |[0m > react-scripts start
+[34mclient_1    |[0m 
+[33mapi_1       |[0m 
+[33mapi_1       |[0m > @ dev /app
+[33mapi_1       |[0m > nodemon
+[33mapi_1       |[0m 
+[32mworker_1    |[0m 
+[32mworker_1    |[0m > @ dev /app
+[32mworker_1    |[0m > nodemon
+[32mworker_1    |[0m 
+[33mapi_1       |[0m [33m[nodemon] 1.18.3[39m
+[33mapi_1       |[0m [33m[nodemon] to restart at any time, enter `rs`[39m
+[33mapi_1       |[0m [33m[nodemon] watching: *.*[39m
+[33mapi_1       |[0m [32m[nodemon] starting `node index.js`[39m
+[32mworker_1    |[0m [33m[nodemon] 1.18.3[39m
+[32mworker_1    |[0m [33m[nodemon] to restart at any time, enter `rs`[39m
+[32mworker_1    |[0m [33m[nodemon] watching: *.*[39m
+[32mworker_1    |[0m [32m[nodemon] starting `node index.js`[39m
+[33mapi_1       |[0m Listening
+[34mclient_1    |[0m Starting the development server...
+[34mclient_1    |[0m 
+[34mclient_1    |[0m Compiled successfully!
+[34mclient_1    |[0m 
+[34mclient_1    |[0m You can now view client in the browser.
+[34mclient_1    |[0m 
+[34mclient_1    |[0m   Local:            http://localhost:3000/
+[34mclient_1    |[0m   On Your Network:  http://172.22.0.7:3000/
+[34mclient_1    |[0m 
+[34mclient_1    |[0m Note that the development build is not optimized.
+[34mclient_1    |[0m To create a production build, use npm run build.
+[34mclient_1    |[0m 
+[36mnginx_1     |[0m 192.168.80.1 - - [28/Nov/2019:04:51:53 +0000] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" "-"
+[36mnginx_1     |[0m 192.168.80.1 - - [28/Nov/2019:04:51:53 +0000] "GET /static/js/bundle.js HTTP/1.1" 304 0 "http://192.168.80.130:3050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" "-"
+[36mnginx_1     |[0m 192.168.80.1 - - [28/Nov/2019:04:51:53 +0000] "GET /static/media/logo.5d5d9eef.svg HTTP/1.1" 304 0 "http://192.168.80.130:3050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" "-"
+[36mnginx_1     |[0m 192.168.80.1 - - [28/Nov/2019:04:51:53 +0000] "GET /api/values/current HTTP/1.1" 304 0 "http://192.168.80.130:3050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" "-"
+[36mnginx_1     |[0m 192.168.80.1 - - [28/Nov/2019:04:51:53 +0000] "GET /api/values/all HTTP/1.1" 304 0 "http://192.168.80.130:3050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" "-"
+[36mnginx_1     |[0m 192.168.80.1 - - [28/Nov/2019:04:51:53 +0000] "GET /sockjs-node/info?t=1574916713772 HTTP/1.1" 200 90 "http://192.168.80.130:3050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" "-"
+[35mredis_1     |[0m 1:signal-handler (1574916828) Received SIGTERM scheduling shutdown...
+[33mapi_1       |[0m npm ERR! code ELIFECYCLE
+[33mapi_1       |[0m npm ERR! errno 143
+[33mapi_1       |[0m npm ERR! @ dev: `nodemon`
+[33mapi_1       |[0m npm ERR! Exit status 143
+[33mapi_1       |[0m npm ERR! 
+[33mapi_1       |[0m npm ERR! Failed at the @ dev script.
+[33mapi_1       |[0m npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+[35mredis_1     |[0m 1:M 28 Nov 2019 04:53:48.687 # User requested shutdown...
+[35mredis_1     |[0m 1:M 28 Nov 2019 04:53:48.729 * Saving the final RDB snapshot before exiting.
+[31mpostgres_1  |[0m 2019-11-28 04:53:48.763 UTC [1] LOG:  received smart shutdown request
+[33mapi_1       |[0m 
+[33mapi_1       |[0m npm ERR! A complete log of this run can be found in:
+[33mapi_1       |[0m npm ERR!     /root/.npm/_logs/2019-11-28T04_53_48_749Z-debug.log
+[32mworker_1    |[0m npm ERR! code ELIFECYCLE
+[32mworker_1    |[0m npm ERR! errno 143
+[35mredis_1     |[0m 1:M 28 Nov 2019 04:53:48.799 * DB saved on disk
+[35mredis_1     |[0m 1:M 28 Nov 2019 04:53:48.799 # Redis is now ready to exit, bye bye...
+[31mpostgres_1  |[0m 2019-11-28 04:53:48.830 UTC [1] LOG:  background worker "logical replication launcher" (PID 29) exited with exit code 1
+[31mpostgres_1  |[0m 2019-11-28 04:53:48.830 UTC [24] LOG:  shutting down
+[32mworker_1    |[0m npm ERR! @ dev: `nodemon`
+[32mworker_1    |[0m npm ERR! Exit status 143
+[32mworker_1    |[0m npm ERR! 
+[32mworker_1    |[0m npm ERR! Failed at the @ dev script.
+[32mworker_1    |[0m npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+[32mworker_1    |[0m 
+[32mworker_1    |[0m npm ERR! A complete log of this run can be found in:
+[32mworker_1    |[0m npm ERR!     /root/.npm/_logs/2019-11-28T04_53_48_856Z-debug.log
+[31mpostgres_1  |[0m 2019-11-28 04:53:48.911 UTC [1] LOG:  database system is shut down
+Exception in thread Thread-19:
+Traceback (most recent call last):
+  File "site-packages/urllib3/connectionpool.py", line 600, in urlopen
+  File "site-packages/urllib3/connectionpool.py", line 384, in _make_request
+  File "<string>", line 2, in raise_from
+  File "site-packages/urllib3/connectionpool.py", line 380, in _make_request
+  File "http/client.py", line 1331, in getresponse
+  File "http/client.py", line 297, in begin
+  File "http/client.py", line 266, in _read_status
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "site-packages/requests/adapters.py", line 449, in send
+  File "site-packages/urllib3/connectionpool.py", line 638, in urlopen
+  File "site-packages/urllib3/util/retry.py", line 368, in increment
+  File "site-packages/urllib3/packages/six.py", line 685, in reraise
+  File "site-packages/urllib3/connectionpool.py", line 600, in urlopen
+  File "site-packages/urllib3/connectionpool.py", line 384, in _make_request
+  File "<string>", line 2, in raise_from
+  File "site-packages/urllib3/connectionpool.py", line 380, in _make_request
+  File "http/client.py", line 1331, in getresponse
+  File "http/client.py", line 297, in begin
+  File "http/client.py", line 266, in _read_status
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "threading.py", line 916, in _bootstrap_inner
+  File "threading.py", line 864, in run
+  File "compose/cli/log_printer.py", line 214, in watch_events
+  File "compose/project.py", line 493, in yield_loop
+  File "compose/project.py", line 461, in build_container_event
+  File "compose/container.py", line 48, in from_id
+  File "site-packages/docker/utils/decorators.py", line 19, in wrapped
+  File "site-packages/docker/api/container.py", line 755, in inspect_container
+  File "site-packages/docker/utils/decorators.py", line 46, in inner
+  File "site-packages/docker/api/client.py", line 230, in _get
+  File "site-packages/requests/sessions.py", line 537, in get
+  File "site-packages/requests/sessions.py", line 524, in request
+  File "site-packages/requests/sessions.py", line 637, in send
+  File "site-packages/requests/adapters.py", line 498, in send
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+
+Exception in thread Thread-17:
+Traceback (most recent call last):
+  File "site-packages/urllib3/connectionpool.py", line 600, in urlopen
+  File "site-packages/urllib3/connectionpool.py", line 384, in _make_request
+  File "<string>", line 2, in raise_from
+  File "site-packages/urllib3/connectionpool.py", line 380, in _make_request
+  File "http/client.py", line 1331, in getresponse
+  File "http/client.py", line 297, in begin
+  File "http/client.py", line 258, in _read_status
+  File "socket.py", line 586, in readinto
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "site-packages/requests/adapters.py", line 449, in send
+  File "site-packages/urllib3/connectionpool.py", line 638, in urlopen
+  File "site-packages/urllib3/util/retry.py", line 368, in increment
+  File "site-packages/urllib3/packages/six.py", line 685, in reraise
+  File "site-packages/urllib3/connectionpool.py", line 600, in urlopen
+  File "site-packages/urllib3/connectionpool.py", line 384, in _make_request
+  File "<string>", line 2, in raise_from
+  File "site-packages/urllib3/connectionpool.py", line 380, in _make_request
+  File "http/client.py", line 1331, in getresponse
+  File "http/client.py", line 297, in begin
+  File "http/client.py", line 258, in _read_status
+  File "socket.py", line 586, in readinto
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "threading.py", line 916, in _bootstrap_inner
+  File "threading.py", line 864, in run
+  File "compose/cli/log_printer.py", line 166, in tail_container_logs
+  File "compose/cli/log_printer.py", line 197, in wait_on_exit
+  File "compose/container.py", line 281, in wait
+  File "site-packages/docker/utils/decorators.py", line 19, in wrapped
+  File "site-packages/docker/api/container.py", line 1285, in wait
+  File "site-packages/docker/utils/decorators.py", line 46, in inner
+  File "site-packages/docker/api/client.py", line 226, in _post
+  File "site-packages/requests/sessions.py", line 572, in post
+  File "site-packages/requests/sessions.py", line 524, in request
+  File "site-packages/requests/sessions.py", line 637, in send
+  File "site-packages/requests/adapters.py", line 498, in send
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+Exception in thread Thread-14:
+Traceback (most recent call last):
+  File "site-packages/urllib3/connectionpool.py", line 600, in urlopen
+  File "site-packages/urllib3/connectionpool.py", line 384, in _make_request
+  File "<string>", line 2, in raise_from
+  File "site-packages/urllib3/connectionpool.py", line 380, in _make_request
+  File "http/client.py", line 1331, in getresponse
+  File "http/client.py", line 297, in begin
+  File "http/client.py", line 258, in _read_status
+  File "socket.py", line 586, in readinto
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "site-packages/requests/adapters.py", line 449, in send
+  File "site-packages/urllib3/connectionpool.py", line 638, in urlopen
+  File "site-packages/urllib3/util/retry.py", line 368, in increment
+  File "site-packages/urllib3/packages/six.py", line 685, in reraise
+  File "site-packages/urllib3/connectionpool.py", line 600, in urlopen
+  File "site-packages/urllib3/connectionpool.py", line 384, in _make_request
+  File "<string>", line 2, in raise_from
+  File "site-packages/urllib3/connectionpool.py", line 380, in _make_request
+  File "http/client.py", line 1331, in getresponse
+  File "http/client.py", line 297, in begin
+  File "http/client.py", line 258, in _read_status
+  File "socket.py", line 586, in readinto
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "threading.py", line 916, in _bootstrap_inner
+  File "threading.py", line 864, in run
+  File "compose/cli/log_printer.py", line 166, in tail_container_logs
+  File "compose/cli/log_printer.py", line 197, in wait_on_exit
+  File "compose/container.py", line 281, in wait
+  File "site-packages/docker/utils/decorators.py", line 19, in wrapped
+  File "site-packages/docker/api/container.py", line 1285, in wait
+  File "site-packages/docker/utils/decorators.py", line 46, in inner
+  File "site-packages/docker/api/client.py", line 226, in _post
+  File "site-packages/requests/sessions.py", line 572, in post
+  File "site-packages/requests/sessions.py", line 524, in request
+  File "site-packages/requests/sessions.py", line 637, in send
+  File "site-packages/requests/adapters.py", line 498, in send
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+Exception in thread Thread-16:
+Traceback (most recent call last):
+  File "site-packages/urllib3/connectionpool.py", line 600, in urlopen
+  File "site-packages/urllib3/connectionpool.py", line 384, in _make_request
+  File "<string>", line 2, in raise_from
+  File "site-packages/urllib3/connectionpool.py", line 380, in _make_request
+  File "http/client.py", line 1331, in getresponse
+  File "http/client.py", line 297, in begin
+  File "http/client.py", line 258, in _read_status
+  File "socket.py", line 586, in readinto
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "site-packages/requests/adapters.py", line 449, in send
+  File "site-packages/urllib3/connectionpool.py", line 638, in urlopen
+  File "site-packages/urllib3/util/retry.py", line 368, in increment
+  File "site-packages/urllib3/packages/six.py", line 685, in reraise
+  File "site-packages/urllib3/connectionpool.py", line 600, in urlopen
+  File "site-packages/urllib3/connectionpool.py", line 384, in _make_request
+  File "<string>", line 2, in raise_from
+  File "site-packages/urllib3/connectionpool.py", line 380, in _make_request
+  File "http/client.py", line 1331, in getresponse
+  File "http/client.py", line 297, in begin
+  File "http/client.py", line 258, in _read_status
+  File "socket.py", line 586, in readinto
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "threading.py", line 916, in _bootstrap_inner
+  File "threading.py", line 864, in run
+  File "compose/cli/log_printer.py", line 166, in tail_container_logs
+  File "compose/cli/log_printer.py", line 197, in wait_on_exit
+  File "compose/container.py", line 281, in wait
+  File "site-packages/docker/utils/decorators.py", line 19, in wrapped
+  File "site-packages/docker/api/container.py", line 1285, in wait
+  File "site-packages/docker/utils/decorators.py", line 46, in inner
+  File "site-packages/docker/api/client.py", line 226, in _post
+  File "site-packages/requests/sessions.py", line 572, in post
+  File "site-packages/requests/sessions.py", line 524, in request
+  File "site-packages/requests/sessions.py", line 637, in send
+  File "site-packages/requests/adapters.py", line 498, in send
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+Exception in thread Thread-18:
+Traceback (most recent call last):
+  File "site-packages/urllib3/connectionpool.py", line 600, in urlopen
+  File "site-packages/urllib3/connectionpool.py", line 384, in _make_request
+  File "<string>", line 2, in raise_from
+  File "site-packages/urllib3/connectionpool.py", line 380, in _make_request
+  File "http/client.py", line 1331, in getresponse
+  File "http/client.py", line 297, in begin
+  File "http/client.py", line 258, in _read_status
+  File "socket.py", line 586, in readinto
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "site-packages/requests/adapters.py", line 449, in send
+  File "site-packages/urllib3/connectionpool.py", line 638, in urlopen
+  File "site-packages/urllib3/util/retry.py", line 368, in increment
+  File "site-packages/urllib3/packages/six.py", line 685, in reraise
+  File "site-packages/urllib3/connectionpool.py", line 600, in urlopen
+  File "site-packages/urllib3/connectionpool.py", line 384, in _make_request
+  File "<string>", line 2, in raise_from
+  File "site-packages/urllib3/connectionpool.py", line 380, in _make_request
+  File "http/client.py", line 1331, in getresponse
+  File "http/client.py", line 297, in begin
+  File "http/client.py", line 258, in _read_status
+  File "socket.py", line 586, in readinto
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "threading.py", line 916, in _bootstrap_inner
+  File "threading.py", line 864, in run
+  File "compose/cli/log_printer.py", line 166, in tail_container_logs
+  File "compose/cli/log_printer.py", line 197, in wait_on_exit
+  File "compose/container.py", line 281, in wait
+  File "site-packages/docker/utils/decorators.py", line 19, in wrapped
+  File "site-packages/docker/api/container.py", line 1285, in wait
+  File "site-packages/docker/utils/decorators.py", line 46, in inner
+  File "site-packages/docker/api/client.py", line 226, in _post
+  File "site-packages/requests/sessions.py", line 572, in post
+  File "site-packages/requests/sessions.py", line 524, in request
+  File "site-packages/requests/sessions.py", line 637, in send
+  File "site-packages/requests/adapters.py", line 498, in send
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+Exception in thread Thread-13:
+Traceback (most recent call last):
+  File "site-packages/urllib3/connectionpool.py", line 600, in urlopen
+  File "site-packages/urllib3/connectionpool.py", line 384, in _make_request
+  File "<string>", line 2, in raise_from
+  File "site-packages/urllib3/connectionpool.py", line 380, in _make_request
+  File "http/client.py", line 1331, in getresponse
+  File "http/client.py", line 297, in begin
+  File "http/client.py", line 258, in _read_status
+  File "socket.py", line 586, in readinto
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "site-packages/requests/adapters.py", line 449, in send
+  File "site-packages/urllib3/connectionpool.py", line 638, in urlopen
+  File "site-packages/urllib3/util/retry.py", line 368, in increment
+  File "site-packages/urllib3/packages/six.py", line 685, in reraise
+  File "site-packages/urllib3/connectionpool.py", line 600, in urlopen
+  File "site-packages/urllib3/connectionpool.py", line 384, in _make_request
+  File "<string>", line 2, in raise_from
+  File "site-packages/urllib3/connectionpool.py", line 380, in _make_request
+  File "http/client.py", line 1331, in getresponse
+  File "http/client.py", line 297, in begin
+  File "http/client.py", line 258, in _read_status
+  File "socket.py", line 586, in readinto
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "threading.py", line 916, in _bootstrap_inner
+  File "threading.py", line 864, in run
+  File "compose/cli/log_printer.py", line 166, in tail_container_logs
+  File "compose/cli/log_printer.py", line 197, in wait_on_exit
+  File "compose/container.py", line 281, in wait
+  File "site-packages/docker/utils/decorators.py", line 19, in wrapped
+  File "site-packages/docker/api/container.py", line 1285, in wait
+  File "site-packages/docker/utils/decorators.py", line 46, in inner
+  File "site-packages/docker/api/client.py", line 226, in _post
+  File "site-packages/requests/sessions.py", line 572, in post
+  File "site-packages/requests/sessions.py", line 524, in request
+  File "site-packages/requests/sessions.py", line 637, in send
+  File "site-packages/requests/adapters.py", line 498, in send
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+Exception in thread Thread-15:
+Traceback (most recent call last):
+  File "site-packages/urllib3/connectionpool.py", line 600, in urlopen
+  File "site-packages/urllib3/connectionpool.py", line 384, in _make_request
+  File "<string>", line 2, in raise_from
+  File "site-packages/urllib3/connectionpool.py", line 380, in _make_request
+  File "http/client.py", line 1331, in getresponse
+  File "http/client.py", line 297, in begin
+  File "http/client.py", line 258, in _read_status
+  File "socket.py", line 586, in readinto
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "site-packages/requests/adapters.py", line 449, in send
+  File "site-packages/urllib3/connectionpool.py", line 638, in urlopen
+  File "site-packages/urllib3/util/retry.py", line 368, in increment
+  File "site-packages/urllib3/packages/six.py", line 685, in reraise
+  File "site-packages/urllib3/connectionpool.py", line 600, in urlopen
+  File "site-packages/urllib3/connectionpool.py", line 384, in _make_request
+  File "<string>", line 2, in raise_from
+  File "site-packages/urllib3/connectionpool.py", line 380, in _make_request
+  File "http/client.py", line 1331, in getresponse
+  File "http/client.py", line 297, in begin
+  File "http/client.py", line 258, in _read_status
+  File "socket.py", line 586, in readinto
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "threading.py", line 916, in _bootstrap_inner
+  File "threading.py", line 864, in run
+  File "compose/cli/log_printer.py", line 166, in tail_container_logs
+  File "compose/cli/log_printer.py", line 197, in wait_on_exit
+  File "compose/container.py", line 281, in wait
+  File "site-packages/docker/utils/decorators.py", line 19, in wrapped
+  File "site-packages/docker/api/container.py", line 1285, in wait
+  File "site-packages/docker/utils/decorators.py", line 46, in inner
+  File "site-packages/docker/api/client.py", line 226, in _post
+  File "site-packages/requests/sessions.py", line 572, in post
+  File "site-packages/requests/sessions.py", line 524, in request
+  File "site-packages/requests/sessions.py", line 637, in send
+  File "site-packages/requests/adapters.py", line 498, in send
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
