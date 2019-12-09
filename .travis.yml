@@ -6,8 +6,6 @@ services:
 before_install:
   - docker build -t jobsforprabu/docker-react  -f ./client/Dockerfile.dev ./client
 
-script:
-  - docker run -e CI=true jobsforprabu/react-test npm test
 
 after_success:
   - docker build -t jobsforprabu/multi-client ./client
