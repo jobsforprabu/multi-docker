@@ -5,21 +5,21 @@ services:
 
 
 before_install:
-  - docker build -t jobsforprabu/docker-react  -f ./client/Dockerfile.dev ./client
+  - docker build -t prganesh/docker-react  -f ./client/Dockerfile.dev ./client
 
 
 after_success:
-  - docker build -t jobsforprabu/multi-client ./client
-  - docker build -t jobsforprabu/multi-nginx ./nginx
-  - docker build -t jobsforprabu/multi-server ./server
-  - docker build -t jobsforprabu/multi-worker ./worker
+  - docker build -t prganesh/multi-client ./client
+  - docker build -t prganesh/multi-nginx ./nginx
+  - docker build -t prganesh/multi-server ./server
+  - docker build -t prganesh/multi-worker ./worker
 
   #login to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin 
   
 
   #take those images and push them to docker hub
-  - docker push jobsforprabu/multi-client
-  - docker push jobsforprabu/multi-nginx
-  - docker push jobsforprabu/multi-server
-  - docker push jobsforprabu/multi-worker
+  - docker push prganesh/multi-client
+  - docker push prganesh/multi-nginx
+  - docker push prganesh/multi-server
+  - docker push prganesh/multi-worker
