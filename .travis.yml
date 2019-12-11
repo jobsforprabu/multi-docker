@@ -23,3 +23,15 @@ after_success:
   - docker push prganesh/multi-nginx
   - docker push prganesh/multi-server
   - docker push prganesh/multi-worker
+
+deploy:
+  edge: true
+  provider: us-east-1
+  app: multi-docker
+  env: MultiDocker-env
+  bucket_name: elasticbeanstalk-us-east-1-038991751164
+  bucket_path: docker-multi
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
